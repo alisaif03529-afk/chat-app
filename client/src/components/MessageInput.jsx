@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
+import { API_URL } from "../config";
 
-const SERVER = "http://localhost:5000";
+const SERVER = API_URL;
 const LEVEL_COUNT = 40;
 
 const formatTime = (sec) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;

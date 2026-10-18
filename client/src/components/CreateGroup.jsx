@@ -1,6 +1,7 @@
-import { useState } from "react";
+  import { useState } from "react";
+import { API_URL } from "../config";
 
-const SERVER = "http://localhost:5000";
+const SERVER = API_URL;
 
 function CreateGroup({ username, onClose, onCreated }) {
   const [name, setName] = useState("");

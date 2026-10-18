@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { API_URL } from "../config";
 import PresenceStatus from "./PresenceStatus";
 import { getName } from "../utils/name";
 
-const SERVER = "http://localhost:5000";
+const SERVER = API_URL;
 
 function GroupInfo({ group, username, onlineUsers, names = {}, onClose, onUpdated, onLeft }) {
   const [newMember, setNewMember] = useState("");

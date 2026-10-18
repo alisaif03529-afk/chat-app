@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { API_URL } from "../config";
 
-const SERVER = "http://localhost:5000";
+const SERVER = API_URL;
 
 function EditProfile({ username, onClose, onProfileUpdated }) {
   const storageKey = "profile_" + username;

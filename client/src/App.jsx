@@ -11,7 +11,10 @@ import GroupInfo from "./components/GroupInfo";
 import { getName } from "./utils/name";
 import "./App.css";
 
-const SERVER = "http://localhost:5000";
+
+import { API_URL } from "./config";
+
+const SERVER = API_URL;
 
 const getInitialNotify = () => {
   try {
